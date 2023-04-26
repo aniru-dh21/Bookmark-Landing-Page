@@ -33,3 +33,13 @@ Users should be able to:
 
 - [Live site URL]()
 - [Solution URL](https://github.com/aniru-dh21/Bookmark-Landing-Page)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS properties
+- Flexbox
+- JavaScript
+- Desktop-first workflow
