@@ -24,3 +24,7 @@ Users should be able to:
 - Receive an error message when the newsletter form is submitted if:
   - The input field is empty
   - The email address is not formatted correctly
+
+### Screenshot
+
+![](./snapshot.png)
