@@ -1,0 +1,64 @@
+.accordion {
+  text-align: left;
+}
+
+.accordion .trigger {
+  padding-block: 25px 18px;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+:first-child > .accordion .trigger {
+  border-top: 2px solid #e4e4e4;
+}
+
+.accordion .trigger > * {
+  font-size: var(--16-18);
+  letter-spacing: -0.56px;
+  margin-block-start: 0;
+}
+
+.accordion button {
+  text-align: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.accordion button svg {
+  flex-shrink: 0;
+  color: hsl(var(--clr-soft-blue));
+}
+
+.accordion button[aria-expanded="true"] svg {
+  color: hsl(var(--clr-soft-red));
+  rotate: 180deg;
+}
+
+.accordion .panel {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 200ms;
+}
+
+.accordion .panel[aria-hidden="true"] {
+  grid-template-rows: 0fr;
+}
+
+.accordion .panel p {
+  font-size: var(--15-16);
+  line-height: 2;
+  letter-spacing: 0.075px;
+  margin-block-start: 11px;
+}
+
+.accordion .panel p:last-child {
+  border-bottom: 2px solid #e4e4e4;
+  padding-bottom: 26px;
+}

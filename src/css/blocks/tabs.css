@@ -1,0 +1,108 @@
+[role="tablist"] {
+  display: flex;
+  max-inline-size: 729px;
+  margin-inline: auto;
+}
+
+[role="tab"] {
+  border: none;
+  border-bottom: 1px solid #e7e9ee;
+  background-color: transparent;
+  color: hsl(var(--clr-grayish-blue));
+  padding-block: 19px;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+  position: relative;
+}
+
+[aria-orientation="vertical"] [role="tab"]:first-child {
+  border-top: 1px solid #e7e9ee;
+}
+
+[role="tab"]:hover {
+  color: hsl(var(--clr-soft-red));
+  transition: color 300ms;
+}
+
+[role="tab"][aria-selected="true"] {
+  color: hsl(var(--clr-very-dark-blue));
+}
+
+[role="tab"][aria-selected="true"]::after {
+  content: "";
+  background-color: hsl(var(--clr-soft-red));
+  position: absolute;
+  width: 143px;
+  height: 5px;
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
+}
+
+[aria-orientation="horizontal"] [role="tab"][aria-selected="true"]::after {
+  width: 100%;
+}
+
+[role="tabpanel"] {
+  margin-block-start: 72px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+[role="tabpanel"][aria-hidden="true"] {
+  display: none;
+}
+
+[role="tabpanel"] .image {
+  position: relative;
+  width: 100%;
+  max-width: 536px;
+  margin-inline: auto;
+  flex-shrink: 0;
+  /* Grows from 30px at 320w to 83px at 600w */
+  --bg-offset-top: clamp(1.875rem, -1.9107rem + 18.9286vw, 5.1875rem);
+  /* Grows from 34px at 375w to 65px at 600w */
+  --bg-offset-right: clamp(2.125rem, -1.1042rem + 13.7778vw, 4.0625rem);
+}
+
+[role="tabpanel"] img {
+  margin-inline: auto;
+}
+
+[role="tabpanel"] .text {
+  margin-inline: auto;
+  max-inline-size: 443px;
+}
+
+[role="tabpanel"] .text :first-child {
+  font-size: var(--24-32);
+  margin-block-start: 0;
+}
+
+[role="tabpanel"] .btn {
+  display: none;
+}
+
+@media screen and (min-width: 977px) {
+  [role="tabpanel"] {
+    flex-direction: row;
+    text-align: left;
+    gap: 3em;
+    justify-content: space-between;
+  }
+
+  [role="tabpanel"] + [role="tabpanel"] .image img {
+    margin-inline-start: 75px;
+  }
+
+  [role="tabpanel"] .text {
+    margin-inline: 0;
+    margin-block-start: 62px;
+  }
+
+  [role="tabpanel"] .btn {
+    display: inline-block;
+    margin-block-start: 32px;
+  }
+}

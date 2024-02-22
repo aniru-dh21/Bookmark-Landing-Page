@@ -1,0 +1,9 @@
+.site-header {
+  --gutter: var(--32-48);
+  --wrapper-max-width: 1110px;
+  margin-block: 40px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: space-between;
+}

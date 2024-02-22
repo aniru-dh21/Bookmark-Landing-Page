@@ -1,0 +1,13 @@
+.bg-blue-pill::after {
+  content: "";
+  position: absolute;
+  background-color: hsl(var(--clr-soft-blue));
+  z-index: -1;
+  width: 200%;
+  border-radius: 99em;
+
+  height: clamp(10.5625rem, 0.9562rem + 48.0315vw, 22rem);
+  top: var(--bg-offset-top);
+  left: var(--bg-offset-left);
+  right: var(--bg-offset-right);
+}

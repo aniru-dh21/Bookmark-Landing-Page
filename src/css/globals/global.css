@@ -1,0 +1,63 @@
+:root {
+  --clr-soft-blue: 231 69% 60%;
+  --clr-soft-red: 0 94% 66%;
+  --clr-grayish-blue: 229 8% 60%;
+  --clr-very-dark-blue: 229 31% 21%;
+
+  --shadow-color: 0deg 0% 80%;
+  --shadow-elevation-low: 0px 1px 1.1px hsl(var(--shadow-color) / 0.17),
+    0px 1.4px 1.6px -1.2px hsl(var(--shadow-color) / 0.17),
+    0px 3px 3.4px -2.5px hsl(var(--shadow-color) / 0.17);
+  --shadow-elevation-medium: 0px 1px 1.1px hsl(var(--shadow-color) / 0.18),
+    0px 2.7px 3px -0.8px hsl(var(--shadow-color) / 0.18),
+    0px 6.3px 7.1px -1.7px hsl(var(--shadow-color) / 0.18),
+    0px 15px 16.9px -2.5px hsl(var(--shadow-color) / 0.18);
+  --shadow-elevation-high: 0px 1px 1.1px hsl(var(--shadow-color) / 0.16),
+    0px 3.4px 3.8px -0.4px hsl(var(--shadow-color) / 0.16),
+    0px 5.9px 6.6px -0.7px hsl(var(--shadow-color) / 0.16),
+    0px 9.4px 10.6px -1.1px hsl(var(--shadow-color) / 0.16),
+    0px 14.6px 16.4px -1.4px hsl(var(--shadow-color) / 0.16),
+    0px 22.6px 25.4px -1.8px hsl(var(--shadow-color) / 0.16),
+    0px 34.1px 38.4px -2.1px hsl(var(--shadow-color) / 0.16),
+    0px 50px 56.3px -2.5px hsl(var(--shadow-color) / 0.16);
+
+  --15-16: clamp(0.9375rem, 0.9155rem + 0.0939vw, 1rem);
+  --16-18: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  --18-21: clamp(1.125rem, 1.059rem + 0.2817vw, 1.3125rem);
+  --24-32: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+  --32-48: clamp(2rem, 1.6479rem + 1.5023vw, 3rem);
+  --30-48: clamp(1.875rem, 1.4789rem + 1.6901vw, 3rem);
+
+  font-family: "Rubik", ui-rounded, "Hiragino Maru Gothic ProN", Quicksand,
+    Comfortaa, Manjari, "Arial Rounded MT", "Arial Rounded MT Bold", Calibri,
+    source-sans-pro, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: hsl(var(--clr-very-dark-blue));
+  overflow-x: hidden;
+}
+
+h2,
+h3 {
+  font-weight: 500;
+  line-height: 1.3;
+  color: hsl(var(--clr-very-dark-blue));
+}
+
+p {
+  line-height: 1.55;
+  letter-spacing: -0.48px;
+  text-wrap: pretty;
+}
+
+a:not([class]):hover {
+  color: hsl(var(--clr-soft-red));
+}
+
+section {
+  color: hsl(var(--clr-grayish-blue));
+}

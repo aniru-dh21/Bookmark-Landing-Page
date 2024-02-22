@@ -1,0 +1,11 @@
+.region {
+  font-size: var(--16-18);
+}
+
+.region h2 {
+  font-size: var(--24-32);
+}
+
+.region p {
+  margin-block-start: var(--18-21);
+}

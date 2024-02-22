@@ -1,0 +1,33 @@
+.download {
+  --gutter: var(--32-48);
+  margin-block-start: clamp(9.3125rem, 7.2879rem + 8.6385vw, 15.0625rem);
+  text-align: center;
+}
+
+.download .intro {
+  --wrapper-max-width: 555px;
+}
+
+.download ul {
+  padding-inline-start: 0;
+  margin-block: clamp(2.4375rem, 2.2614rem + 0.7512vw, 2.9375rem);
+  margin-inline: auto;
+  gap: 40px 34px;
+  justify-content: center;
+  max-inline-size: 911px;
+  --threshold: 651px;
+}
+
+.download ul li > * {
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 726px) {
+  .download ul li:nth-child(2) {
+    margin-block-start: 40px;
+  }
+
+  .download ul li:nth-child(3) {
+    margin-block-start: 80px;
+  }
+}

@@ -1,0 +1,11 @@
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+
+.social-links a {
+  display: flex;
+}

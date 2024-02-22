@@ -1,0 +1,93 @@
+.contact-form {
+  margin-block-start: 31px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 443px) {
+  .contact-form {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contact-form .field {
+    flex-grow: 1;
+  }
+}
+
+.contact-form .field {
+  position: relative;
+}
+
+.contact-form input,
+.contact-form button {
+  border-radius: 6px;
+}
+
+.contact-form input {
+  padding: 13px 17px;
+  border: none;
+  color: hsl(var(--clr-very-dark-blue));
+  border: 3px solid transparent;
+  width: 100%;
+}
+
+.contact-form input::placeholder {
+  color: hsl(var(--clr-grayish-blue));
+  opacity: 1;
+}
+
+.contact-form input[aria-invalid] {
+  border-color: hsl(var(--clr-soft-red));
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form .field:has([aria-invalid])::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-soft-red));
+  background-image: url("/images/icon-error.svg");
+  top: 13px;
+  right: 13px;
+  z-index: 1;
+}
+
+.contact-form .error {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 200ms;
+  position: relative;
+}
+
+.contact-form .error:has(:empty) {
+  grid-template-rows: 0fr;
+}
+
+.contact-form .error p {
+  margin-block-start: 0;
+  background-color: hsl(var(--clr-soft-red));
+  border-radius: 0 0 6px 6px;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  padding: 2.5px 12px 5px;
+}
+
+.contact-form input[aria-invalid] + .error::before {
+  content: "";
+  position: absolute;
+  background-color: hsl(var(--clr-soft-red));
+  width: 100%;
+  height: 6px;
+  left: 0;
+  top: 0;
+  translate: 0 -100%;
+}

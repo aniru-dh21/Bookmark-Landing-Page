@@ -1,0 +1,139 @@
+.burger-menu .trigger {
+  border: none;
+  width: 39px;
+  height: 39px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 11;
+}
+
+.burger-menu .trigger[aria-expanded="true"] {
+  color: #fff;
+}
+
+.burger-menu .trigger svg > * {
+  transform-origin: center;
+  transition: all 200ms;
+}
+
+.burger-menu .trigger svg > :first-child {
+  transform-origin: center 15%;
+}
+
+.burger-menu .trigger svg > :last-child {
+  transform-origin: center 85%;
+}
+
+.burger-menu .trigger[aria-expanded="true"] svg > :nth-child(2) {
+  rotate: 45deg;
+}
+
+.burger-menu .trigger[aria-expanded="true"] svg > :nth-child(3) {
+  rotate: -45deg;
+}
+
+.burger-menu .trigger[aria-expanded="true"] svg > :first-child,
+.burger-menu .trigger[aria-expanded="true"] svg > :last-child {
+  scale: 0;
+}
+
+.burger-menu .panel:first-child,
+.burger-menu .panel:first-child nav ul {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.burger-menu .trigger + .panel {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(var(--clr-very-dark-blue) / 95%);
+  color: #fff;
+  padding: 40px 32px 48px;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 200ms, visibility 200ms;
+}
+
+.burger-menu .trigger[aria-expanded="false"] + .panel {
+  opacity: 0;
+  visibility: hidden;
+  transition: none;
+}
+
+body:has(.trigger[aria-expanded="true"]) {
+  overflow: hidden;
+}
+
+.burger-menu .panel .logo {
+  margin-block-start: 7px;
+}
+
+.burger-menu .panel .logomark > :nth-child(1) {
+  fill: #fff;
+}
+
+.burger-menu .panel .logomark > :nth-child(2) {
+  fill: hsl(var(--clr-very-dark-blue));
+}
+
+.burger-menu .trigger + .panel nav {
+  margin-block-start: 40px;
+}
+
+.burger-menu .panel nav ul {
+  padding-inline-start: 0;
+  margin-block: 0;
+}
+
+.burger-menu .panel a {
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: normal;
+  font-size: 13px;
+  letter-spacing: 1.56px;
+}
+
+.burger-menu .panel:first-child .btn {
+  padding: 10px 30px;
+}
+
+.burger-menu .trigger + .panel a {
+  font-size: 20px;
+  letter-spacing: 2.4px;
+  display: flex;
+  justify-content: center;
+}
+
+.burger-menu .trigger + .panel nav a {
+  padding-block: 20px;
+  border-bottom: 1px solid #4c526c;
+}
+
+.burger-menu .trigger + .panel nav li:first-child a {
+  border-top: 1px solid #4c526c;
+}
+
+.burger-menu .trigger + .panel .btn {
+  --bg-color: transparent;
+  box-shadow: none;
+  margin-block-start: 24px;
+  border: 2px solid #fff;
+  padding: 10px;
+}
+
+.burger-menu .trigger + .panel .btn:hover {
+  --bg-color: hsl(var(--clr-very-dark-blue));
+}
+
+.burger-menu .panel .social-links {
+  margin-block: auto 0;
+}

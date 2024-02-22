@@ -1,0 +1,24 @@
+@import "globals/reset.css";
+@import "globals/fonts.css";
+@import "globals/global.css";
+
+@import "blocks/burger-menu.css";
+@import "blocks/site-header.css";
+@import "blocks/social-links.css";
+@import "blocks/hero-section.css";
+@import "blocks/bg-blue-pill.css";
+@import "blocks/button.css";
+@import "blocks/tabs.css";
+@import "blocks/features-section.css";
+@import "blocks/download-section.css";
+@import "blocks/accordion.css";
+@import "blocks/faq-section.css";
+@import "blocks/contact-form.css";
+@import "blocks/cta-section.css";
+@import "blocks/b-card.css";
+@import "blocks/region.css";
+@import "blocks/site-footer.css";
+
+@import "utilities/switcher.css";
+@import "utilities/visually-hidden.css";
+@import "utilities/wrapper.css";

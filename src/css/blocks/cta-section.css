@@ -1,0 +1,37 @@
+section.cta {
+  --gutter: var(--32-48);
+  --wrapper-max-width: 442px;
+  padding-block-start: 72px;
+  min-height: 360px;
+  text-align: center;
+  background-color: hsl(var(--clr-soft-blue));
+  color: #fff;
+  margin-block-start: 122px;
+}
+
+section.cta * {
+  line-height: normal;
+}
+
+section.cta .eyebrow {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 4.03px;
+  text-transform: uppercase;
+}
+
+section.cta .title {
+  font-weight: 500;
+  font-size: var(--24-32);
+  margin-block-start: 13px;
+}
+
+section.cta .bth {
+  box-shadow: none;
+}
+
+@media screen and (min-width: 443px) {
+  section.cta .title {
+    margin-block-start: 37px;
+  }
+}

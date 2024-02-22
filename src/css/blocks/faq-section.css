@@ -1,0 +1,12 @@
+.faq {
+  --gutter: var(--32-48);
+  --wrapper-max-width: 540px;
+  text-align: center;
+  margin-block-start: clamp(8.6875rem, 8.3574rem + 1.4085vw, 9.625rem);
+}
+
+.faq ul {
+  padding-inline-start: 0;
+  margin-block-start: clamp(2.8125rem, 2.5924rem + 0.939vw, 3.4375rem);
+  margin-block-end: clamp(3rem, 2.868rem + 0.5634vw, 3.375rem);
+}

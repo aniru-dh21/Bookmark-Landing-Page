@@ -1,0 +1,36 @@
+.b-card {
+  display: grid;
+  grid-template-columns: 24px 1fr 24px;
+  justify-items: center;
+  padding-block: 49px 23px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-elevation-medium);
+  max-inline-size: 280px;
+}
+
+.b-card > * {
+  grid-column: 2 / 3;
+}
+
+.b-card :nth-child(2) {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: hsl(var(--clr-very-dark-blue));
+  margin-block-start: 32px;
+}
+
+.b-card :nth-child(3) {
+  font-size: 15px;
+  letter-spacing: normal;
+  margin-block-start: 11px;
+}
+
+.b-card :nth-child(4) {
+  grid-column: 1 / -1;
+  margin-block: 37px 24px;
+}
+
+.b-card :last-child {
+  width: 100%;
+}
