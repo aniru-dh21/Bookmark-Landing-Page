@@ -22,3 +22,8 @@ Users should be able to:
 - Receive an error message when the newsletter froom is submitted if:
   - The input field is empty
   - The email address is not formatted correctly
+
+### Links
+
+- Solution URL: [Repository](https://github.com/aniru-dh21/Bookmark-Landing-Page/tree/master)
+- Live Site URL: [Live](https://incomparable-narwhal-10dd62.netlify.app/)
