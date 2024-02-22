@@ -27,3 +27,12 @@ Users should be able to:
 
 - Solution URL: [Repository](https://github.com/aniru-dh21/Bookmark-Landing-Page/tree/master)
 - Live Site URL: [Live](https://incomparable-narwhal-10dd62.netlify.app/)
+
+## My process
+
+### Built with
+
+- Vite
+- React.js
+- Mobile-first workflow
+- GSAP
