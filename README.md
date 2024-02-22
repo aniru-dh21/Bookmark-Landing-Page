@@ -36,3 +36,9 @@ Users should be able to:
 - React.js
 - Mobile-first workflow
 - GSAP
+
+## Author
+
+- Website - [Ramachandra Anirudh Vemulapalli](https://ramachandra-anirudh-vemulapalli.vercel.app/)
+- Frontend Mentor - [@aniru-dh21](https://www.frontendmentor.io/profile/aniru-dh21)
+- Twitter - [@Dh21Aniru](https://twitter.com/Dh21Aniru)
